@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link th:href="@{/style2.css}" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+	<h1> This is level two page</h1>
+	<h2 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!!!</h2>	
+	<form th:action="@{/logout}" method="post">
+		<input type="submit" value="logout"/> 
+	</form>
+</body>
+</html>
